@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin:0%;
+            background-color: rgb(232, 230, 230);
+        }
+
+        .heading{
+            background-color: rgb(36, 169, 71);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: 35% auto 35%;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .content div{
+            /* border: 2px grey solid; */
+            box-shadow:2px 2px 6px 3px rgb(194, 193, 193) ;
+            border-radius: 10px;
+            background-color: white;
+            padding: 15px;
+        }
+
+        h2{
+            color: rgb(36, 169, 71);
+        }
+
+        .about, .res{
+            grid-column-start: 1;
+        }
+
+        .box{
+            grid-column-start: 3;
+        }
+
+        footer{
+            background-color: black;
+            padding: 20px;
+            color:white;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a{
+            color:rgb(36, 169, 71);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Welcome to your Website Task</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="about">
+            <h2>About CSS</h2>
+            <p>Cascading Style Sheets (CSS) allows you to style an dlayout your web pages, ading colors, spacing, and more.</p>
+        </div>
+
+        <div class="box">
+            <h2>Box Model</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding, and the actual content.</p>
+        </div>
+
+        <div class="res">
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Shraddha Gupta | 
+            Follow us on <a href="#">Instagram</a>
+            | <a href="#">Twitter</a>
+            | <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
